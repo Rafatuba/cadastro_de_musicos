@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastro de Músicos</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de Músicos</h1>
+        <p id="subtitulo">Complete as Informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="celular"><strong>Celular</strong></label>
+                <input type="tel" name="celular" id="celular" required>
+            </div>
+
+            <div class="campo">
+                <label for="nascimento"><strong>Data de Nascimento</strong></label>
+                <input type="date" name="nascimento" id="nascimento" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="campo">
+            <label><strong>Instrumento</strong></label>
+            <input type="text" name="instrumento" id="instrumento" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Cargo Ministerial</strong></label>
+            <label>
+                <input type="radio" name="cargo" value="pastor">Pastor
+            </label>
+            <label>
+                <input type="radio" name="cargo" value="evangelísta">Evangelísta
+            </label>
+            <label>
+                <input type="radio" name="cargo" value="presbítero">Presbítero
+            </label>
+            <label>
+                <input type="radio" name="cargo" value="diácono">Diácono/Diaconisa
+            </label>
+            <label>
+                <input type="radio" name="cargo" value="missionária">Missionária
+            </label>
+            <label>
+                <input type="radio" name="cargo" value="cooperador">Cooperador(a)
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="função"><strong>Função Extra</strong></label>
+            <select id="função">
+                <option selected disabled value="">Selecione</option>
+                <option>Regente</option>
+                <option>Secretário(a)</option>
+                <option>Tesoureiro(a)</option>
+                <option>Arquivista/Copista</option>
+                <option>Outra</option>
+                <option>Nenhuma</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Executa outros instrumentos?</strong></label><br><br>
+                <input type="checkbox" id="instrumento1" name="instrumento1" value="Não">
+                <label for="instrumento1">Não</label>
+                <input type="checkbox" id="instrumento2" name="instrumento2" value="Flauta">
+                <label for="instrumento2">Flauta</label>
+                <input type="checkbox" id="instrumento3" name="instrumento3" value="Clarinete">
+                <label for="instrumento3">Clarinete</label>
+                <input type="checkbox" id="instrumento4" name="instrumento4" value="Sax-Alto">
+                <label for="instrumento4">Sax-Alto</label>
+                <input type="checkbox" id="instrumento5" name="instrumento5" value="Sax-Tenor">
+                <label for="instrumento5">Sax-Tenor</label>
+                <input type="checkbox" id="instrumento6" name="instrumento6" value="Sax-Barítono">
+                <label for="instrumento6">Sax-Barítono</label><br>
+                <input type="checkbox" id="instrumento7" name="instrumento7" value="Violino">
+                <label for="instrumento7">Violino</label>
+                <input type="checkbox" id="instrumento8" name="instrumento8" value="Violoncelo">
+                <label for="instrumento8">Violoncelo</label>
+                <input type="checkbox" id="instrumento9" name="instrumento9" value="Trompete">
+                <label for="instrumento9">Trompete</label>
+                <input type="checkbox" id="instrumento10" name="instrumento10" value="Trombone">
+                <label for="instrumento10">Trombone</label>
+                <input type="checkbox" id="instrumento11" name="instrumento11" value="Trompa">
+                <label for="instrumento11">Trompa</label>
+                <input type="checkbox" id="instrumento12" name="instrumento12" value="Teclado">
+                <label for="instrumento12">Teclado/Piano</label><br>
+                <input type="checkbox" id="instrumento13" name="instrumento13" value="BaixoElétrico">
+                <label for="instrumento13">Baixo-Elétrico</label>
+                <input type="checkbox" id="instrumento14" name="instrumento14" value="Guitarra">
+                <label for="instrumento14">Guitarra/Violão</label>
+                <input type="checkbox" id="instrumento15" name="instrumento15" value="Bateria">
+                <label for="instrumento15">Bateria/Percussão</label>
+                <input type="checkbox" id="instrumento16" name="instrumento16" value="Tuba">
+                <label for="instrumento16">Tuba</label>
+                <input type="checkbox" id="instrumento17" name="instrumento17" value="Outros">
+                <label for="instrumento17">Outros</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Quais suas músicas favoritas?</strong></label>
+            <textarea rows="6" style="width: 26em;" id="musicas" name="musicas"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+    </form>
+</body>
+</html>
